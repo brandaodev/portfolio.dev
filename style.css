@@ -1,0 +1,242 @@
+:root {
+    --txt-color-1: #fff;
+    --txt-color-2: #a1a1a1;
+    --bg-color-1: #121214;
+    --bg-color-2: #2a2634;
+    --border-color: #443e54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./img/florian-olivo-JNz9bQD3Oio-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body * {
+    line-height: 160%;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    margin-top: 2rem;
+    height: 120px;
+}
+
+header div {
+    display: flex;
+    width: 120px;
+    margin: auto;
+    background: -moz-linear-gradient(-56deg,  #de4313 0%,#fec163 100%); 
+    background: -webkit-linear-gradient(-56deg,  #de4313 0%,#fec163 100%); 
+    background: linear-gradient(-56deg,  #de4313 0%,#fec163 100%);
+    border-radius: 50%;
+    padding: 4px;
+    transition: transform 0.4s;
+    animation: upToDown 0.5s 0.2s backwards;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 2rem auto;
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+section {
+    padding: 4px 0;
+    border-radius: 10px;
+    background: -moz-linear-gradient(-56deg,  #de4313 0%,#fec163 100%); 
+    background: -webkit-linear-gradient(-56deg,  #de4313 0%,#fec163 100%); 
+    background: linear-gradient(-56deg,  #de4313 0%,#fec163 100%);
+    animation: moveToRight 0.5s backwards;
+}
+
+section:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+section:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+section div {
+    padding: 1.5rem 2rem 2rem 2rem;
+    border-radius: 8px;
+    background-color: var(--bg-color-2);
+}
+
+p {
+    color: var(--txt-color-2);
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+li {
+    transition: transform 0.4s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 900;
+    align-items: center;
+}
+
+.about h4{
+    color: #cecece;
+    font-weight: 600;
+}
+
+.about p{
+    text-align: justify;
+}
+
+.about-list img {
+    border-radius: 8px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill i{
+    font-size: 5rem;
+}
+
+.fa-html5{
+    color: #e34c26;
+}
+
+.fa-css3-alt{
+    color: #264de4;
+}
+
+.fa-js-square{
+    color: #F0DB4F;
+}
+
+.fa-wordpress{
+    color:#0e76a8;
+}
+
+.fa-git-alt{
+    color: #F1502F;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-list{
+    justify-content: space-evenly;
+}
+
+.project-list img {
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.social i{
+    font-size: 2rem;
+
+}
+
+.fa-github{
+    color: #cecece;
+}
+
+.fa-linkedin {
+    color: #0e76a8 ;
+}
+
+.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook{
+    color: #3b5998 ;
+}
+
+.fa-whatsapp{
+    color: #128c7e;
+}
+/* === ANIMATION === */
+
+@keyframes upToDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
