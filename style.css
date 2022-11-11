@@ -135,30 +135,21 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .skill i{
     font-size: 5rem;
 }
 
-.fa-html5{
-    color: #e34c26;
-}
-
-.fa-css3-alt{
-    color: #264de4;
-}
-
-.fa-js-square{
-    color: #F0DB4F;
-}
-
-.fa-wordpress{
-    color:#0e76a8;
-}
-
 .fa-git-alt{
     color: #F1502F;
+}
+
+
+.skill-logo{
+    width: 5rem;
+    height: 5rem;
 }
 
 .project{
