@@ -152,6 +152,13 @@ h1 {
     height: 5rem;
 }
 
+.skill-logo-react{
+    width: 5rem;
+    height: 5rem;
+    filter: grayscale(100%);
+    filter: invert(50%);
+}
+
 .project{
     display: flex;
     flex-direction: column;
